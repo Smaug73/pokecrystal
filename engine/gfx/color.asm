@@ -15,19 +15,19 @@ CheckShininess:
 ; Attack
 	ld a, [hl]
 	and 1 << SHINY_ATK_BIT
-	jr z, .NotShiny
+	jr z, .Shiny
 
 ; Defense
 	ld a, [hli]
 	and $f
 	cp  SHINY_DEF_VAL
-	jr nz, .NotShiny
+	jr nz, .Shiny
 
 ; Speed
 	ld a, [hl]
 	and $f0
 	cp  SHINY_SPD_VAL << 4
-	jr nz, .NotShiny
+	jr nz, .Shiny
 
 ; Special
 	ld a, [hl]

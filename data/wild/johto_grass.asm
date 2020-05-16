@@ -1193,48 +1193,51 @@ JohtoGrassWildMons:
 	map_id ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 5, PIDGEY
+	db 5, SENTRET
+	db 5, PIDGEY
+	db 5, SENTRET
+	db 5, RATTATA
+	db 5, HOPPIP
+	db 5, HOPPIP
 	; day
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 5, PIDGEY
+	db 5, SENTRET
+	db 5, PIDGEY
+	db 5, SENTRET
+	db 5, RATTATA
+	db 5, HOPPIP
+	db 5, HOPPIP
 	; nite
-	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, RATTATA
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 5, HOOTHOOT
+	db 5, RATTATA
+	db 5, HOOTHOOT
+	db 5, RATTATA
+	db 5, RATTATA
+	db 5, HOOTHOOT
+	db 5, HOOTHOOT
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, LEDYBA
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 4, PIDGEY
-	db 3, WEEDLE
-	db 4, HOPPIP
-	db 4, HOPPIP
+	db 5, LEDYBA
+	db 5, CATERPIE
+	db 5, CATERPIE
+	db 5, PIDGEY
+	db 5, WEEDLE
+	db 5, HOPPIP
+	db 5, HOPPIP
+	db 5, CHARMENDER
+	db 6, CHARMENDER
+	db 2, CHARMENDER
 	; day
-	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 4, PIDGEY
-	db 3, WEEDLE
-	db 4, HOPPIP
-	db 4, HOPPIP
+	db 5, PIDGEY
+	db 5, CATERPIE
+	db 5, CATERPIE
+	db 5, PIDGEY
+	db 5, WEEDLE
+	db 5, HOPPIP
+	db 5, HOPPIP
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
