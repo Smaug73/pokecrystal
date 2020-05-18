@@ -424,32 +424,12 @@ BattleAnimFunction_PokeBallBlocked:
 	ret
 
 GetBallAnimPal:
-	ld hl, BallColors
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wCurItem)
-	ldh [rSVBK], a
-	ld a, [wCurItem]
-	ld e, a
-	pop af
-	ldh [rSVBK], a
-.IsInArray:
-	ld a, [hli]
-	cp -1
-	jr z, .load
-	cp e
-	jr z, .load
-	inc hl
-	jr .IsInArray
-
-.load
-	ld a, [hl]
+	;mod pokeball colore
 	ld hl, BATTLEANIMSTRUCT_PALETTE
 	add hl, bc
-	ld [hl], a
+	ld [hl], PAL_BATTLE_OB_RED
 	ret
-
-INCLUDE "data/battle_anims/ball_colors.asm"
+	;mod pokeball colore
 
 BattleAnimFunction_10:
 	call BattleAnim_AnonJumptable

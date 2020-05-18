@@ -798,14 +798,14 @@ wDexListingCursorBackup:: db
 wBackupDexListingCursor:: db
 wBackupDexListingPage:: db
 wDexCurLocation:: db
-if DEF(_CRYSTAL11)
-wPokedexStatus:: db
-wPokedexDataEnd::
-else
-wPokedexDataEnd:: ds 1
-endc
-	ds 2
 
+wPokedexStatus:: db
+wPokedexShinyToggle::;mod for shiny pokemon in pokedex
+;bit 0: set if display shiny palettes
+	db
+wPokedexDataEnd::
+	ds 1
+;mod for shiny pokemon in pokedex
 NEXTU ; c6d0
 ; pokegear
 wPokegearPhoneLoadNameBuffer:: db ; c6d0
@@ -1395,12 +1395,9 @@ wCreditsLYOverride:: db
 NEXTU ; cf64
 ; pokedex
 wPrevDexEntryJumptableIndex:: db
-if DEF(_CRYSTAL11)
+;mod for shiny pokemon in pokedex
 wPrevDexEntryBackup:: db
-else
-wPrevDexEntryBackup::
-wPokedexStatus:: db
-endc
+;mod for shiny pokemon in pokedex
 
 NEXTU ; cf64
 ; pokegear
