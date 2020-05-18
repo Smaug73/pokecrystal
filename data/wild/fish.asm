@@ -166,10 +166,9 @@ FishGroups:
 	db  90 percent + 1, KRABBY,     20
 	db 100 percent,     time_group 18
 .WhirlIslands_Super:
-	db  40 percent,     KRABBY,     40
-	db  70 percent,     time_group 19
-	db  90 percent + 1, KINGLER,    40
-	db 100 percent,     SEADRA,     40
+	db  40 percent,     time_group 19
+	db  70 percent + 1, KINGLER,    40
+	db  90 percent,     SEADRA,     40
 	db 100 percent,		KINGDRA,	40
 
 .Qwilfish_NoSwarm_Old:

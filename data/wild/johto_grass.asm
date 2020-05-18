@@ -1099,7 +1099,6 @@ JohtoGrassWildMons:
 	db 48, GRAVELER
 	db 50, URSARING
 	db 20, LARVITAR
-	db 15, LARVITAR
 	db 40, PUPITAR
 	; nite
 	db 51, GOLBAT
@@ -1279,8 +1278,6 @@ JohtoGrassWildMons:
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
-	db 7, PIDGEY
-	db 7, HOPPIP
 	db 7, HOPPIP
 	db 7, MAREEP
 	db 6, MAREEP
@@ -1288,8 +1285,6 @@ JohtoGrassWildMons:
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
-	db 6, HOPPIP
-	db 7, PIDGEY
 	db 7, HOPPIP
 	db 7, HOPPIP
 	db 7, MAREEP

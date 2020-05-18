@@ -1,9 +1,9 @@
 INCLUDE "engine/gfx/sgb_layouts.asm"
 
-SHINY_ATK_VAL EQU 10
-SHINY_DEF_VAL EQU 9
-SHINY_SPD_VAL EQU 8
-SHINY_SPC_VAL EQU 7
+SHINY_ATK_BIT EQU 5
+SHINY_DEF_VAL EQU 10
+SHINY_SPD_VAL EQU 10
+SHINY_SPC_VAL EQU 10
 
 CheckShininess:
 ;Mod shiny probability
@@ -15,24 +15,24 @@ CheckShininess:
 
 ; Attack
 	ld a, [hl]
-	cp SHINY_ATK_VAL << 4
+	cp 10 << 4
 	jr c, .NotShiny
 
 ; Defense
 	ld a, [hli]
 	and $f
-	cp  SHINY_DEF_VAL
+	cp  9
 	jr c, .NotShiny
 
 ; Speed
 	ld a, [hl]
-	cp  SHINY_SPD_VAL << 4
+	cp  8 << 4
 	jr c, .NotShiny
 
 ; Special
 	ld a, [hl]
 	and $f
-	cp  SHINY_SPC_VAL
+	cp  7
 	jr c, .NotShiny
 
 .Shiny:

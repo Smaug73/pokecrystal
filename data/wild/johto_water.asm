@@ -227,7 +227,7 @@ JohtoWaterWildMons:
 	map_id SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate
 	db 35, POLIWHIRL
-	db 40, POLIWHIRL
+	db 40, POLITOED
 	db 35, POLIWAG
 
 	db -1 ; end
